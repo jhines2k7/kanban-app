@@ -18,3 +18,10 @@ const common = {
   }
 }
 
+if(TARGET === 'start' || !TARGET) {
+  module.exports = merge(common, {});
+}
+
+if(TARGET === 'build') {
+  module.exports = merge(common, {});
+}
